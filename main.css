@@ -1,3 +1,68 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+body,
+html {
+  background-color: #ff99c4;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 3px 5px 0px rgba(0,0,0,0.1);
+  font-weight: 900;
+  font-size: 50px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+#quote-mark {
+  font-family: Helvetica;
+  line-height: 1.5rem;
+  color: rgba(255,255,255,0.4);
+}
+
+#new-quote-btn {
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  color: #ff99c4;
+  border: 0px;
+  border-radius: 5px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.footer{
+  width:100%;
+  position:fixed;
+  bottom:-315px;
+  background-color:#fff;
+  height:350px;
+  color: black;
+  transition:all 0.2s ease;
+  -webkit-transition:all 0.2s ease;
+}
+
+.footer:hover{
+  bottom:0;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  color: #ff99c4;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  padding:2px 0px 2px 0px;
+}
+
+.footer-content {
+  padding-top: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
 }
