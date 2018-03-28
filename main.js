@@ -1,4 +1,3 @@
-console.log("sanity check");
 var quotes = ["Move, bitch.", "It's not just a bag.<br>It's prada.", "I'm so frick-in' pissed!",
 "Yo, hold my poodle.<br>Hold my poodle!", "Hi, I'm Cellulite Sally!<br>Look at my huge ba-donkey!",
 "She's having a bitch fit!", "Triple t, k, a.<br>Time to totally kick ass!", "For the lady, perhaps a salad?<br>Perhaps not!",
@@ -10,19 +9,17 @@ var randomNum, lastNum;
 var quote = document.getElementById('quote');
 var btn = document.getElementById('new-quote-btn');
 
-//
 function getRandomNum() {
   return Math.floor(Math.random() * (quotes.length-1 + 1));
 }
 
-//
 function getRandomQuote() {
   randomNum = getRandomNum();
   while(randomNum === lastNum) {
     randomNum = getRandomNum();
   }
   lastNum = randomNum;
-  quote.innerHTML = quotes[randomNum];
+  quote.innerHTML = "&#8220;" + quotes[randomNum] + "&#8221;";
 }
 
 getRandomQuote();
